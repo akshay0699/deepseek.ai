@@ -11,7 +11,7 @@ export default async function connectDB() {
     try {
         cached.conn = await cached.Promise;
     } catch (error) {
-        console.error("Error connecting to mongodb:", error)
+        console.log("Error connecting to mongodb:", error)
     }
     return cached.conn
     
